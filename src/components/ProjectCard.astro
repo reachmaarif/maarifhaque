@@ -1,0 +1,51 @@
+---
+import { Image } from "astro:assets";
+import type { CollectionEntry } from "astro:content";
+import H2 from "./CustomUI/H2.astro"
+
+interface Props {
+  project: CollectionEntry<"projects">;
+}
+
+const { project } = Astro.props;
+---
+
+<div class="font-openSans card w-full hover:opacity-60 transform transition-transform hover:translate-y-[2px]">
+<a href={`/${project.id}`} title={project.data.title}>
+  <figure class="w-full aspect-video bg-base-300 rounded-4xl">
+    {
+      project.data.icon && (
+        <div class="flex flex-row items-center gap-3">
+          <Image
+            src={project.data.icon}
+            alt={project.data.iconTitle || project.data.title}
+            title={project.data.iconTitle || project.data.title}
+            width={60}
+            height={60}
+            class="w-14 rounded-lg"
+          />
+          <p class="font-extrabold font-openSans text-2xl text-base-content/60">{project.data.iconTitle}</p>
+        </div>
+      )
+    }
+  </figure>
+  <div class="card-body p-4">
+   
+      <H2>
+        {project.data.title}
+      </H2>
+    
+    <p>{project.data.excerpt}</p>
+    <div class="card-actions items-center mt-2">
+      {project.data.tags.map((tag, index) => (
+        <>
+          <div class="font-openSans text-xs opacity-70 uppercase">{tag}</div>
+          {index < project.data.tags.length - 1 && <div class="bg-base-content/70 w-1 h-1 rounded-full"/>}
+        </>
+      ))}
+      
+    </div>
+  </div>
+  </a>
+</div>
+
