@@ -8,12 +8,12 @@ interface Props {
 const { variant = "transparent", eyebrow, title } = Astro.props;
 ---
 
-<section class={`px-2 lg:px-0 ${variant === "muted" ? "bg-base-300" : "bg-transparent"}`}>
+<section class={`px-2 lg:px-0 ${variant === "muted" ? "bg-base-200" : "bg-transparent"}`}>
   <div class={`w-full lg:max-w-5xl mx-auto py-32`}>
     {
       eyebrow && (
         <>
-          <p class="font-Brawler text-2xl text-muted-foreground mb-3">
+          <p class="font-PP italic thin text-italics text-2xl text-muted-foreground mb-3">
             {eyebrow}
           </p>
           <div class="w-5 h-1 mb-2 bg-base-content" />
@@ -21,7 +21,7 @@ const { variant = "transparent", eyebrow, title } = Astro.props;
       )
     }
 
-    {title && <h2 class="text-4xl font-light mb-8">{title}</h2>}
+    {title && <h2 class="text-4xl font-PP Thin mb-8">{title}</h2>}
 
     <div class="prose prose-neutral dark:prose-invert max-w-none">
       <slot />

@@ -15,11 +15,11 @@ const menu = siteMeta?.data.navigationMain;
       class="fixed top-0 left-0 right-0 z-50 flex items-center justify-between"
     >
       <div
-        class="navbar shadow-2xs w-6xl max-h-2 mx-auto px-3 lg:px-12 bg-base-100/30 backdrop-blur-md mt-2 rounded-lg font-openSans text-xl font-bold"
+        class="navbar w-6xl max-h-2 mx-auto px-3 lg:px-12 bg-base-100/30 backdrop-blur-md mt-2 rounded-lg font-PPBold text-md"
       >
         <div class="mx-2 flex-1 px-2">
-          <a class="hover:text-violet-800 duration-300 ease-in-out" href="/" title={`${title}`}>
-            <h1>{title}</h1>
+          <a href="/" title={`${title}`}>
+            <span class="text-xl hover:text-gray-950/40 duration-300 ease-in-out">{title}</span>
           </a>
         </div>
         <div class="flex-none lg:hidden mr-3">
@@ -42,11 +42,11 @@ const menu = siteMeta?.data.navigationMain;
             </svg>
           </label>
         </div>
-        <div class="hidden flex-none lg:block">
-            <ul class="items-center">
+        <div class="hidden flex itemms-center lg:block">
+            <ul class="flex items-center">
               {
                 menu?.map((item) => (
-                  <li class="px-2 mx-2 text-xl hover:text-violet-800 duration-300 ease-in-out">
+                  <li class="px-2 mx-2 text-lg hover:text-gray-950/30 duration-300 ease-in-out">
                     <a href={item.href} title={`Go to ${item.label}`}>
                       {item.label}
                     </a>
