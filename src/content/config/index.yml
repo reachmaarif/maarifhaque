@@ -2,7 +2,7 @@ site:
   title: Maarif Haque
   jobtitle: Product/Experience designer, strategist
   description: Product/Experience designer, strategist. Specializing in designing 1-10 products focusing on MVP, growth, scalability, and continuous refinement through active user testing.
-  image: ../og-image.jpg  
+  image: ../og-image.png  
   author: S Maarif Haque
   email: reach.maarif@gmail.com
   linkedinUrl: https://linkedin.com/in/@maarifhaque
@@ -10,3 +10,5 @@ site:
   navigationMain:
     - label: About
       href: /about
+    - label: Work
+      href: /#work
