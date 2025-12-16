@@ -138,12 +138,85 @@
     /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
+
+/* dm-serif-text-regular - latin */
+
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'DM Serif Text';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/dm-serif-text-v13-latin-regular.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+
+/* dm-serif-text-italic - latin */
+
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'DM Serif Text';
+    font-style: italic;
+    font-weight: 400;
+    src: url('../fonts/dm-serif-text-v13-latin-italic.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'PPThin';
+    font-style: thin;
+    src: url('../fonts/PPNeueMontreal-Thin.woff') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'PPBold';
+    font-style: bold;
+    src: url('../fonts/PPNeueMontreal-Bold.woff') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'PPBook';
+    font-style: normal;
+    src: url('../fonts/PPNeueMontreal-Book.woff') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'PPMedium';
+    font-style: normal;
+    src: url('../fonts/PPNeueMontreal-Medium.woff') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'PPItalic';
+    font-style: italic;
+    src: url('../fonts/PPNeueMontreal-Italic.woff') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+ 
 @theme {
     --font-openSans: "Open Sans";
     --font-Brawler: "Brawler";
     --font-Mannin: "Mannin-BoldItalic";
+    --font-PPItalic: "PPItalic";
+    --font-PPBook: "PPBook";
+    --font-PPThin: "PPThin";
+    --font-PPBold: "PPBold";
+    --font-PPMedium: "PPMedium";
 }
 
-html {
-    font-family: font-openSans;
+body {
+    font-family: "PPBook";
 }
