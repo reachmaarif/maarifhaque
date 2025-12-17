@@ -205,6 +205,14 @@
     src: url('../fonts/PPNeueMontreal-Italic.woff') format('woff2');
     /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Momo';
+    font-style: italic;
+    src: url('../fonts/MomoTrustDisplay-Regular.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
  
 @theme {
     --font-openSans: "Open Sans";
@@ -215,8 +223,10 @@
     --font-PPThin: "PPThin";
     --font-PPBold: "PPBold";
     --font-PPMedium: "PPMedium";
+    --font-Momo: "Momo";
 }
 
 body {
     font-family: "PPBook";
 }
+
